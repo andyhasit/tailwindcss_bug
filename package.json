@@ -1,0 +1,16 @@
+{
+  "name": "tailwind_bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production npx tailwindcss build ./styles.css -o ./out.css",
+    "check": "grep -B 5 -A 5 '\\.hidden' ./out.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.9.6"
+  }
+}
